@@ -48,7 +48,7 @@ class EnfermeroHomeFragment(correoEnfermero: String) : Fragment(), OfertasAdapte
 
     private fun loadOfertas(){
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+            .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -77,7 +77,7 @@ class EnfermeroHomeFragment(correoEnfermero: String) : Fragment(), OfertasAdapte
     private fun getIdEnfermero(correo: String){
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+            .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

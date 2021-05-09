@@ -71,7 +71,7 @@ class DetalleOfertaEnfermeroFragment(idOferta: Int, idEnfermero: Int, correoEnfe
 
     private fun postularOferta(context: Context) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+            .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -107,7 +107,7 @@ class DetalleOfertaEnfermeroFragment(idOferta: Int, idEnfermero: Int, correoEnfe
 
     private fun LoadDetalleOferta(context: Context) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+            .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

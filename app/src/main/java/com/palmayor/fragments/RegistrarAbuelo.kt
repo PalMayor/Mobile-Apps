@@ -97,7 +97,7 @@ class RegistrarAbuelo(correo : String) : Fragment() {
 
     private fun loadFamiliar(context: Context) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+            .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -124,7 +124,7 @@ class RegistrarAbuelo(correo : String) : Fragment() {
 
     private fun loadAbvcs(context: Context) {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+            .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
@@ -232,7 +232,7 @@ class RegistrarAbuelo(correo : String) : Fragment() {
 
     private fun registrarAbuelo() {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+            .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 

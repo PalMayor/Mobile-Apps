@@ -70,7 +70,7 @@ class FamiliarHomeFragment(correoFamiliar: String) : Fragment(), ServicioAdapter
         if(correo != null) {
             if(correo.isNotEmpty()) {
                 val retrofit = Retrofit.Builder()
-                    .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+                    .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
 

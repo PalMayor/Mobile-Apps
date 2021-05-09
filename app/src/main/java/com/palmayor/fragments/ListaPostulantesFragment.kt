@@ -48,7 +48,7 @@ class ListaPostulantesFragment(idOferta: Int, correoFamiliar: String) : Fragment
 
     private fun loadPostulantes(id: Int, context: Context){
         val retrofit = Retrofit.Builder()
-                                .baseUrl("https://apivp.azurewebsites.net/api/v1/")
+                                .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
                                 .addConverterFactory(GsonConverterFactory.create())
                                 .build()
 
