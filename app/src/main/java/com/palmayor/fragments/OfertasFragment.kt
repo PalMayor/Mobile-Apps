@@ -53,7 +53,7 @@ class OfertasFragment(correoFamiliar: String) : Fragment(), OfertasAdapter.OnIte
             Log.d("asd", "asdasd")
             if (it.isNotEmpty()) {
                 val retrofit = Retrofit.Builder()
-                    .baseUrl("https://vidaplena2.azurewebsites.net/api/v2/")
+                    .baseUrl("https://vidaplena2.azurewebsites.net/api/v1/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
 
